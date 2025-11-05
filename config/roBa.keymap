@@ -80,16 +80,18 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W          &kp E               &kp R               &kp T                                        &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A       &kp S          &kp D               &kp F               &kp G        &none          &none            &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X          &kp C               &kp V               &kp B        &mo 5          &none            &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESCAPE        &kp BACKSPACE  &mt LEFT_ALT ENTER  &mt LEFT_GUI LANG1  &lt 1 SPACE  &kp SPACE      &lt 1 BACKSPACE  &lt 2 ENTER                             &kp GRAVE
+&kp Q             &kp W          &kp E                    &kp R               &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A       &kp S          &kp D                    &kp F               &kp G        &none            &none            &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X          &kp C                    &kp V               &kp B        &mo 5            &none            &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp ESCAPE        &kp BACKSPACE  &mt LEFT_ALT LANGUAGE_2  &mt LEFT_GUI LANG1  &lt 1 SPACE  &lt 3 SPACE      &lt 1 BACKSPACE  &lt 2 ENTER                             &kp GRAVE
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         NUM {
             bindings = <
-&kp ESC         &none           &kp UP_ARROW    &none            &none                            &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
+&kp TAB         &none           &kp UP_ARROW    &none            &none                            &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
 &kp LG(A)       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &none      &none  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DOT
 &kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp LG(LS(V))  &none      &none  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH
 &kp LEFT_SHIFT  &kp LEFT_ALT    &kp LEFT_GUI    &none            &none          &none      &none  &kp RIGHT_GUI                                                       &kp BACKSPACE
