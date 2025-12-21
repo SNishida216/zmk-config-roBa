@@ -64,14 +64,19 @@
             key-positions = <22 19 20>;
         };
 
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <0 1 41>;
+        left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 19>;
         };
 
-        tilde {
-            bindings = <&kp LS(GRAVE)>;
-            key-positions = <0 1 41 33>;
+        scroll {
+            bindings = <&mo 5>;
+            key-positions = <18 20>;
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <18 21>;
         };
     };
 
